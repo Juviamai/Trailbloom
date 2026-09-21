@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRAILBLOOM — Leave Life Behind</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="scene"></canvas>
+  <canvas id="fx"></canvas>
+
+  <div id="vignette"></div>
+  <div id="veil"></div>
+  <div id="flash"></div>
+  <div id="lbTop" class="lb"></div>
+  <div id="lbBot" class="lb"></div>
+
+  <!-- ============ INTRO OVERLAY ============ -->
+  <div id="introUI">
+    <div class="intro-center">
+      <h1 id="introTitle">TRAILBLOOM</h1>
+      <div id="introSub">Leave Life Behind.</div>
+    </div>
+    <button id="btnSkip" class="hb ghost-btn" type="button">SKIP INTRO</button>
+  </div>
+
+  <!-- ============ MAIN MENU ============ -->
+  <section id="scr-menu" class="screen"></section>
+
+  <!-- ============ WORLD MAP ============ -->
+  <section id="scr-map" class="screen"></section>
+
+  <!-- ============ IN-WORLD HUD ============ -->
+  <section id="hud"></section>
+
+  <!-- ============ SHOE SHOWCASE ============ -->
+  <section id="scr-shoe" class="screen"></section>
+
+  <!-- ============ SEED COLLECTION ============ -->
+  <section id="scr-seeds" class="screen"></section>
+
+  <!-- ============ OUR JOURNEY ============ -->
+  <section id="scr-journey" class="screen"></section>
+
+  <!-- ============ MEMORIES ============ -->
+  <section id="scr-memories" class="screen"></section>
+
+  <!-- ============ ENDING ============ -->
+  <section id="scr-ending" class="screen"></section>
+
+  <!-- ============ FLOATING LAYERS ============ -->
+  <div id="prompt"></div>
+  <div id="actions"></div>
+  <div id="dialogue"></div>
+  <div id="infoPanel"></div>
+  <div id="toasts"></div>
+  <div id="modalWrap"></div>
+  <div id="photoUI"></div>
+  <div id="replay"></div>
+  <div id="cardCenter"></div>
+</div>
+
+<div id="cursor"><div class="c-ring"></div><div class="c-dot"></div><div class="c-label"></div></div>
+
+<script src="js/utils.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/scenes.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
